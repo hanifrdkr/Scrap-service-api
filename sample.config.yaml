@@ -1,0 +1,43 @@
+app:
+  debug: true
+  port: 8080
+  timeout: 5
+  secret_key:
+mysql_db:
+  hostname: host.docker.internal
+  port: 3306
+  username:
+  password:
+  database_name:
+  max_idle_connection: 10
+  max_open_connection: 100
+  max_lifetime_connection: 600
+postgres_db:
+  hostname: host.docker.internal
+  port: 5432
+  username: ibnufaisal
+  password: secret
+  database_name: adspert
+  max_idle_connection: 10
+  max_open_connection: 100
+  max_lifetime_connection: 600
+mongo_db:
+  hostname: host.docker.internal
+  port: 27017
+  username:
+  password:
+  database_name:
+  max_idle_connection: 10
+  max_open_connection: 100
+  max_lifetime_connection: 600
+log:
+  dir: log # Don't Edit This
+  file_name: bee_core
+  max_size: 4 # MB with min 1 MB
+  local_time: true
+  compress: true
+ftp:
+  hostname:
+  username:
+  password:
+  directory:
